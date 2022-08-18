@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESA-02</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="./img/Group 1.png" alt="img">
+    </header>
+
+    <div class="container">
+        <div class="item">
+            <h1 class="h1-card">Primeira Rodada</h1>
+            <h2>Faça sua escolha</h2>
+            <div class="btn-div">
+                <button class="btn-config" onclick="validaEscolhaUsuario(2)"><img src="./img/img-rock.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(1)"><img src="./img/img-paper2.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(3)"><img src="./img/img-scissors.png" alt="img"></button>
+            </div>
+            <h2>Escolha da Máquina</h2>
+            <button id="escolha-maquina"></button>           
+            <div class="result-div">
+                <p class="line"></p>
+                <img src="" alt="">
+                <p class="p-result"></p>
+
+
+                
+            </div>
+        </div>
+
+        <div class="item">
+            <h1 class="h1-card">Segunda Rodada</h1>
+            <h2>Faça sua escolha</h2>
+            <div class="btn-div">
+                <button class="btn-config" value="1"><img src="./img/img-rock.png" alt="img"></button>
+                <button class="btn-config" value="2"><img src="./img/img-paper2.png" alt="img"></button>
+                <button class="btn-config" value="3"><img src="./img/img-scissors.png" alt="img"></button>
+            </div>
+            <h2>Escolha da Máquina</h2>
+            <button>B4</button>
+            <div class="result-div">
+                <p class="line"></p>
+                <img src="" alt="">
+                <p class="p-result">Parabéns Você Venceu</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <h1 class="h1-card">Terceira Rodada</h1>
+            <h2>Faça sua escolha</h2>
+            <div class="btn-div">
+                <button class="btn-config" value="1"><img src="./img/img-rock.png" alt="img"></button>
+                <button class="btn-config" value="2"><img src="./img/img-paper2.png" alt="img"></button>
+                <button class="btn-config" value="3"><img src="./img/img-scissors.png" alt="img"></button>
+            </div>
+            <h2>Escolha da Máquina</h2>
+            <button>B4</button>
+            <div class="result-div">
+                <p class="line"></p>
+                <img src="" alt="">
+                <p class="p-result">Parabéns Você Venceu</p>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <h1 class="h1-placar"> PLACAR </h1>
+    </div>
+    <div class="footer">
+        <div class="card-placar">
+            <p>Primeira Rodada:</p>
+            <p>Segunda Rodada:</p>
+            <p>Terceira Rodada:</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
