@@ -69,11 +69,24 @@ h2 {
     background-color: transparent;
 }
 
+.btn-align {
+    margin-left: 104px;
+}
+
+.h2-margin {
+    margin-bottom: 24px;
+}
+
 .result-div {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+}
+
+#p-result {
+    margin-top: 24px;
+    font-size: 24px;
 }
 
 .line {

@@ -18,36 +18,33 @@
             <h1 class="h1-card">Primeira Rodada</h1>
             <h2>Faça sua escolha</h2>
             <div class="btn-div">
-                <button class="btn-config" onclick="validaEscolhaUsuario(2)"><img src="./img/img-rock.png" alt="img"></button>
-                <button class="btn-config" onclick="validaEscolhaUsuario(1)"><img src="./img/img-paper2.png" alt="img"></button>
-                <button class="btn-config" onclick="validaEscolhaUsuario(3)"><img src="./img/img-scissors.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(2, 'escolha-maquina1', 'p-result1')"><img src="./img/img-rock.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(1, 'escolha-maquina1', 'p-result1')"><img src="./img/img-paper2.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(3, 'escolha-maquina1', 'p-result1')"><img src="./img/img-scissors.png" alt="img"></button>
             </div>
-            <h2>Escolha da Máquina</h2>
-            <button id="escolha-maquina"></button>           
+            <h2 class="h2-margin">Escolha da Máquina</h2>
+            <button id="escolha-maquina1" class="btn-config btn-align" ></button>           
             <div class="result-div">
                 <p class="line"></p>
                 <img src="" alt="">
-                <p class="p-result"></p>
-
-
-                
+                <p id="p-result1"></p>
             </div>
         </div>
 
         <div class="item">
             <h1 class="h1-card">Segunda Rodada</h1>
-            <h2>Faça sua escolha</h2>
+            <h2 >Faça sua escolha</h2>
             <div class="btn-div">
-                <button class="btn-config" value="1"><img src="./img/img-rock.png" alt="img"></button>
-                <button class="btn-config" value="2"><img src="./img/img-paper2.png" alt="img"></button>
-                <button class="btn-config" value="3"><img src="./img/img-scissors.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(2, 'escolha-maquina2', 'p-result2')"><img src="./img/img-rock.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(1, 'escolha-maquina2', 'p-result2')"><img src="./img/img-paper2.png" alt="img"></button>
+                <button class="btn-config" onclick="validaEscolhaUsuario(3, 'escolha-maquina2', 'p-result2')"><img src="./img/img-scissors.png" alt="img"></button>
             </div>
-            <h2>Escolha da Máquina</h2>
-            <button>B4</button>
+            <h2 class="h2-margin">Escolha da Máquina</h2>
+            <button id="escolha-maquina2" class="btn-config btn-align"></button>
             <div class="result-div">
                 <p class="line"></p>
                 <img src="" alt="">
-                <p class="p-result">Parabéns Você Venceu</p>
+                <p id="p-result2"></p>
             </div>
         </div>
 
@@ -55,16 +52,16 @@
             <h1 class="h1-card">Terceira Rodada</h1>
             <h2>Faça sua escolha</h2>
             <div class="btn-div">
-                <button class="btn-config" value="1"><img src="./img/img-rock.png" alt="img"></button>
-                <button class="btn-config" value="2"><img src="./img/img-paper2.png" alt="img"></button>
-                <button class="btn-config" value="3"><img src="./img/img-scissors.png" alt="img"></button>
+                <button class="btn-config"  onclick="validaEscolhaUsuario(2, 'escolha-maquina3', 'p-result3')" ><img src="./img/img-rock.png" alt="img"></button>
+                <button class="btn-config"  onclick="validaEscolhaUsuario(1, 'escolha-maquina3', 'p-result3')"><img src="./img/img-paper2.png" alt="img"></button>
+                <button class="btn-config"  onclick="validaEscolhaUsuario(3, 'escolha-maquina3', 'p-result3')"><img src="./img/img-scissors.png" alt="img"></button>
             </div>
-            <h2>Escolha da Máquina</h2>
-            <button>B4</button>
+            <h2 class="h2-margin">Escolha da Máquina</h2>
+            <button id="escolha-maquina3" class="btn-config btn-align"></button>
             <div class="result-div">
                 <p class="line"></p>
                 <img src="" alt="">
-                <p class="p-result">Parabéns Você Venceu</p>
+                <p id="p-result3"></p>
             </div>
         </div>
 
@@ -74,9 +71,7 @@
     </div>
     <div class="footer">
         <div class="card-placar">
-            <p>Primeira Rodada:</p>
-            <p>Segunda Rodada:</p>
-            <p>Terceira Rodada:</p>
+            <p id="p1">Primeira Rodada: <span class="ponto-usuario">0</span></p>
         </div>
     </div>
 

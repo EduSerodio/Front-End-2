@@ -1,26 +1,25 @@
-let escolhaUsuario1 = prompt("Escolha 1 para papel, 2 para pedra e 3 para tesoura: ");
-let escolhaUsuario2 = prompt("Escolha 1 para papel, 2 para pedra e 3 para tesoura: ");
-let escolhaUsuario3 = prompt("Escolha 1 para papel, 2 para pedra e 3 para tesoura: "); 
-let escolhaMaquina = escolhaComputador(4, 1);
+let pontoUsuario = 0
+let pontoMaquina = 0
+let contador = 0
+
+function validaEscolhaUsuario (btnValue, btnMaquina, pResult) {
+
+    let escolhaMaquina = escolhaComputador(4, 1);
 
 
-function escolhaComputador(max, min) {
+    function escolhaComputador(max, min) {
    
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min) + min);
 }
 
-
-
-function validaEscolhaUsuario (btnValue) {
-
      if (escolhaMaquina == 2){
-        document.getElementById('escolha-maquina').innerHTML = '<img src="./img/img-rock.png" alt="img"></img>'
+        document.getElementById(btnMaquina).innerHTML = '<img src="./img/img-rock.png" alt="img"></img>'
     }else if (escolhaMaquina == 1){
-        document.getElementById('escolha-maquina').innerHTML ='<img src="./img/img-paper2.png" alt="img"></img>'
+        document.getElementById(btnMaquina).innerHTML ='<img src="./img/img-paper2.png" alt="img"></img>'
     }else{
-        document.getElementById('escolha-maquina').innerHTML = '<img src="./img/img-scissors.png" alt="img"></img>'
+        document.getElementById(btnMaquina).innerHTML = '<img src="./img/img-scissors.png" alt="img"></img>'
     }
     
     let pontuacao=() => {
@@ -31,24 +30,29 @@ function validaEscolhaUsuario (btnValue) {
         }else if(btnValue == 1 && escolhaMaquina == 2 || btnValue == 2 && escolhaMaquina == 3 || btnValue == 3 && escolhaMaquina == 1){
             console.log(btnValue);
             return 1
-    
-        }else {
-            console.log(btnValue);
-            return 0.0
+
      }
     }
 
-   
-
     if(pontuacao() == 1){
-        document.getElementsByClassName('p-result').innerHTML = 'Parabéns Voçê Venceu!'
+      
+        document.getElementById(pResult).innerHTML = 'Parabéns! Você venceu!'
+        document.getElementById('p1').innerHTML += " ganhou"
+        console.log('entrou no if');
+        pontoUsuario++
+        console.log(pontoUsuario);
     }else {
-        document.getElementsByClassName('p-result').innerHTML = 'Voçê Perdeu!'
+        document.getElementById(pResult).innerHTML = 'Você perdeu!'
+        document.getElementById('p1').innerHTML += " perdeu"
+        console.log('entrou no else');
     }
+
 
 }
 
-const primeira = rodadas(escolhaUsuario1)
+document.querySelector('.ponto-usuario').textContent = pontoUsuario
+
+/* const primeira = rodadas(escolhaUsuario1)
 const segunda = rodadas(escolhaUsuario2)
 const terceira = rodadas(escolhaUsuario3)
 
@@ -68,4 +72,4 @@ console.log(terceira);
 const btnPrimeiro = document.getElementById('bttn')
 
 console.log(btnPrimeiro.value);
-
+ */
