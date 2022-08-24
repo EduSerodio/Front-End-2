@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    background-color: #d9d9d9;
+}
+@media (max-width: 600px){
+
+
+.header {
+    padding: 8px;
+    background-color: black;
+}
+
+.list-header-config {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 8px;
+    color: #FFFFFF;
+
+}
+
+.img-header {
+    width: 24%;
+
+}
+
+.input-header {
+    width: 32%;
+    height: 14px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.list-header-config>p{
+    margin-top: 4px;
+}
+
+.form-usuario{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 209px;
+    background: rgba(255, 255, 255, 0.84);
+    border-radius: 15px;
+    padding: 20px;
+   
+}
+
+.form-usuario>p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    text-align: center;
+
+}
+
+.input-form{
+    width: 70%;
+    height: 22px;
+    border: 1px solid #787474;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-top: 12px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+
+.input-form::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+}
+
+
+.img-fundo-form{
+    background-image: url(../img/imgform.png);
+    background-size: 100%;
+   
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 12px;
+    height: fit-content;
+    
+}
+
+#descricao{
+    width: 70%;
+    height: 66px;
+    border: 1px solid #787474;
+    border-radius: 5px;
+    background: transparent;
+    margin-top: 12px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    padding-top: 5px;
+}
+
+#descricao::placeholder{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000; 
+}
+
+.btn-form {
+    width: 30%;
+    height: 19px;
+    background: #1C1A1A;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 12px;
+    align-self: center;
+    }
+
+}
